@@ -2,7 +2,7 @@
 title: Are You Playing? Wat Type of playing is this??
 description: ' This way, the JavaScript code will populate the current year into your HTML content dynamically.'
 author: KODA IS NOT REAL
-date: '2023-10-29T00:22:25+03:00'
+date: '2023-10-17T00:22:25+03:00'
 tags:
   - post
   - featured
