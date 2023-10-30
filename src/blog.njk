@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Blogs
 layout: 'base.njk'
 pagination:
   data: collections.post
@@ -20,7 +20,9 @@ pagination:
     <a href="{{ pagination.previousPageLink }}" class="pagination-link">Previous</a>
   {% endif %}
 
-  <span class="pagination-number">Page {{ pagination.pageNumber + 1 }}</span>
+  {% for page in pagination.pages %}
+    <a href="{{ pagination.hrefs[loop.index0] }}" class="pagination-link">{{ loop.index }}</a>
+  {% endfor %}
 
   {% if pagination.nextPageLink %}
     <a href="{{ pagination.nextPageLink }}" class="pagination-link">Next</a>
