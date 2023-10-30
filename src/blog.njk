@@ -15,12 +15,13 @@ pagination:
     {%- endfor -%}
   </ul>
 
+
   {% if pagination.previousPageLink %}
     <a href="{{ pagination.previousPageLink }}" class="pagination-link">Previous</a>
   {% endif %}
 
+  <span class="pagination-number">Page {{ pagination.pageNumber + 1 }}</span>
+
   {% if pagination.nextPageLink %}
     <a href="{{ pagination.nextPageLink }}" class="pagination-link">Next</a>
   {% endif %}
-
-</div>
