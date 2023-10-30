@@ -30,6 +30,9 @@ layout: 'base.njk'
       {%- for post in collections.featured | reverse -%}
         {% include 'article-snippet.njk' %}
       {%- endfor -%}
+      <div style="width: 100%; text-align: center">
+        <a href="./blog" class="btn btn--neutral">More Articles</a>
+      </div>
     </ul>
   </div>
 </section>
