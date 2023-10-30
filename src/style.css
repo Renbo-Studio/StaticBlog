@@ -34,6 +34,20 @@
   }
 }
 
+.pagination-link {
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  padding: 5px 10px; /* Add padding for better visual appearance */
+  text-decoration: none; /* Remove underlines from links */
+  border-radius: 5px; /* Add rounded corners to the links */
+  margin: 5px; /* Add spacing between links */
+}
+
+.pagination-link:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
 /* //////////////////////
   RESET - source: https://piccalil.li/blog/a-modern-css-reset
   /////////////////////// */

@@ -1,13 +1,26 @@
 ---
 title: Blog
 layout: 'base.njk'
+pagination:
+  data: collections.post
+  size: 2
 ---
 
 <div class="section container">
   <h1 class="section-title">Recent articles</h1>
+
   <ul role="list" class="articles__list flow">
-    {%- for post in collections.post | reverse -%}
+    {%- for post in pagination.items | reverse -%}
       {% include 'article-snippet.njk' %}
     {%- endfor -%}
   </ul>
+
+  {% if pagination.previousPageLink %}
+    <a href="{{ pagination.previousPageLink }}" class="pagination-link">Previous</a>
+  {% endif %}
+
+  {% if pagination.nextPageLink %}
+    <a href="{{ pagination.nextPageLink }}" class="pagination-link">Next</a>
+  {% endif %}
+
 </div>
