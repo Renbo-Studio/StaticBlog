@@ -5,12 +5,10 @@ layout: 'base.njk'
 
 <section class="hero">
   <div class="container flow">
-    <div class="hero__content flow">
-      <h1 class="section-title">Welcome to my blog!</h1>
-      <p>I use this space to document my adventures in front-end development, sharing how I’ve overcome issues I’ve
-        run into, useful resources, and more.</p>
+    <div class="flow">
+      <h1 class="section-title">Welcome to Foxy Labs blog!</h1>
       <p>Below are some of my favourite articles, or you can go to the blog page to see my most recent posts.</p>
-      <div class="flex-group">
+      <div><br>
         <a href="#featured-articles" class="btn btn--primary">Featured articles</a>
         <a href="./blog" class="btn btn--neutral">All Articles</a>
       </div>
@@ -22,7 +20,7 @@ layout: 'base.njk'
 </section>
 
 <section id="featured-articles" class="featured-articles">
-  <div class="container flow">
+  <div class="container-sm flow">
     <h2 class="section-title text-center ">Featured articles</h2>
     <p class="text-center">Here is a sample of articles which I feel give you a good idea of what this site is all
       about.</p>
@@ -31,7 +29,7 @@ layout: 'base.njk'
         {% include 'article-snippet.njk' %}
       {%- endfor -%}
       <div style="width: 100%; text-align: center">
-        <a href="./blog" class="btn btn--neutral">More Articles</a>
+        <a href="./blog" class="btn btn-link">More Articles</a>
       </div>
     </ul>
   </div>

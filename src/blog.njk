@@ -20,10 +20,18 @@ pagination:
     <a href="{{ pagination.previousPageLink }}" class="pagination-link">Previous</a>
   {% endif %}
 
+  {% if not pagination.previousPageLink %}
+    <a href="#" class="pagination-link disabled">Previous</a>
+  {% endif %}
+
   {% for page in pagination.pages %}
-    <a href="{{ pagination.hrefs[loop.index0] }}" class="pagination-link">{{ loop.index }}</a>
+      <a href="{{ pagination.hrefs[loop.index0] }}" class="pagination-link {% if loop.index == pagination.pageNumber + 1 %}active{% endif %}">{{ loop.index }}</a>
   {% endfor %}
 
   {% if pagination.nextPageLink %}
     <a href="{{ pagination.nextPageLink }}" class="pagination-link">Next</a>
+  {% endif %}
+
+  {% if not pagination.nextPageLink %}
+    <a href="#" class="pagination-link disabled">Next</a>
   {% endif %}
