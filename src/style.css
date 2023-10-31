@@ -32,9 +32,6 @@
     --fs-600: 1.875rem;
     --fs-700: 2rem;
   }
-  .section-title {
-    color: gray;
-  }
 }
 .pagination-link.active {
   background-color: #0069eb;
@@ -361,11 +358,15 @@ section,
 
 .hero__image {
   width: 100%;
-  filter: brightness(.5);
+  /* max-height: max(15rem, 40vh); */
   object-fit: cover;
 }
 
-
+@media (min-width: 45em) {
+  .hero > div {
+    grid-auto-flow: column;
+  }
+}
 
 .featured-articles {
   background-color: white;
