@@ -32,6 +32,9 @@
     --fs-600: 1.875rem;
     --fs-700: 2rem;
   }
+  .section-title {
+    color: gray;
+  }
 }
 .pagination-link.active {
   background-color: #0069eb;
@@ -358,7 +361,7 @@ section,
 
 .hero__image {
   width: 100%;
-  /* max-height: max(15rem, 40vh); */
+  filter: brightness(.5);
   object-fit: cover;
 }
 
