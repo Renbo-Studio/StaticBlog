@@ -362,11 +362,7 @@ section,
   object-fit: cover;
 }
 
-@media (min-width: 45em) {
-  .hero > div {
-    grid-auto-flow: column;
-  }
-}
+
 
 .featured-articles {
   background-color: white;
