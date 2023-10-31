@@ -25,7 +25,7 @@ layout: 'base.njk'
     <p class="text-center">Here is a sample of articles which I feel give you a good idea of what this site is all
       about.</p>
     <ul role="list" class="articles__list flow">
-      {%- for post in collections.featured | reverse -%}
+      {%- for post in collections.featured -%}
         {% include 'article-snippet.njk' %}
       {%- endfor -%}
       <div style="width: 100%; text-align: center">

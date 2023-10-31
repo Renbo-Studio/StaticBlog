@@ -406,6 +406,11 @@ section,
     "button";
 }
 
+.snippet__body{
+  height: 6em;
+  overflow: hidden;
+}
+
 .snippet__image {
   grid-area: image;
   width: 100%;
