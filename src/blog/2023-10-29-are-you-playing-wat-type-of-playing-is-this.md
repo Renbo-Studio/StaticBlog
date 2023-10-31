@@ -5,7 +5,6 @@ author: KODA IS NOT REAL
 date: '2023-10-17T00:22:25+03:00'
 tags:
   - post
-  - featured
 image: /assets/blog/1177732494.png.jpg
 imageAlt: KODA
 ---
