@@ -33,6 +33,11 @@
     --fs-700: 2rem;
   }
 }
+
+html{
+  overflow-x: hidden;
+}
+
 .pagination-link.active {
   background-color: #0069eb;
   color: #fff; /* Text color for active page */
@@ -254,6 +259,82 @@ section,
   gap: 50px;
 }
 
+
+
+.b-con{
+  padding: 0 20%;
+  position: relative;
+}
+.nav-con{
+  position: relative;
+  height: 460px;
+}
+
+.nav-con h1{
+  color: white;
+  font-size: 40px;
+  padding: 5px;
+}
+
+.intro{
+  background: #f5f5f5;
+  padding: 5% 20%;
+}
+
+.intro .l8{
+  display: flex !important;
+  height: 24rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.col{
+  width: 100%;
+}
+
+.intro .grid-center{
+  font-size: 14px;
+  height: 100% !important;
+}
+
+.intro img{
+  aspect-ratio: 2/2;
+}
+
+.nav-inner{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  translate: -50%;
+  text-align: center;
+}
+
+.nav-inner p{
+  color: #c2c2c2;
+  padding: 5px;
+}
+
+.nav-inner a{
+  color: #0069eb;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.nav-inner a:hover{
+  color: #0e5bb9;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.nav-img{
+  width: 100vw;
+  position: relative;
+  top: -10em;
+  z-index: -1;
+  height: 600px;
+  background-size: cover !important;
+  filter: brightness(.4);
+}
 .nav-list {
   margin: 0;
   padding: 0;
@@ -272,7 +353,7 @@ section,
 }
 
 .nav-list a:hover .flex-group .active {
-  color: white;
+  color: #ffffff4d;
 }
 
 .header-row {
@@ -498,21 +579,21 @@ section,
 }
 .btn--primary:hover,
 .btn--primary:focus {
-  background: var(--clr-primary-500);
+  background: #0e5bb9;
   border-color: var(--clr-primary-500); 
 }
 
 .btn--neutral {
+  padding: 1em;
   background-color: var(--clr-neutral-100);
   color: var(--clr-neutral-900);
   font-weight: var(--fw-700);
-  border: 2px solid var(--clr-neutral-900);
+  border: 1px solid var(--clr-neutral-900);
 }
 
 .btn--neutral:hover,
 .btn--neutral:focus {
-  color: var(--clr-neutral-100);
-  background-color: var(--clr-neutral-900);
+  background-color: #e2e2e2;
 }
 
 footer{
@@ -545,11 +626,12 @@ footer ul li
 footer ul li a
 {
   color: white;
+  font-weight: 600;
 }
 
 .scroll-to-top{
   transition: opacity 0.3s;
-  background: #0000007e !important;
+  background: #000000 !important;
   border-radius: 4px 4px 0 0;
   bottom: 0;
   color: #FFF;

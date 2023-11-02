@@ -1,85 +1,86 @@
 <style>
-   /*********************
+  /*********************
   Media Query Classes
-**********************/
-@media only screen and (max-width: 800px) {
-  .hide-on-small-only, .hide-on-small-and-down {
-    display: none !important;
-  }
-}
+  **********************/
+  @media only screen and (max-width: 800px) {
 
-@media only screen and (max-width: 992px) {
-  .hide-on-med-and-down {
-    display: none !important;
+    .hide-on-small-only,
+    .hide-on-small-and-down {
+      display: none !important;
+    }
   }
-}
 
-@media only screen and (min-width: 601px) {
-  .hide-on-med-and-up {
-    display: none !important;
+  @media only screen and (max-width: 992px) {
+    .hide-on-med-and-down {
+      display: none !important;
+    }
   }
-}
 
-@media only screen and (min-width: 800px) and (max-width: 992px) {
-  .hide-on-med-only {
-    display: none !important;
+  @media only screen and (min-width: 601px) {
+    .hide-on-med-and-up {
+      display: none !important;
+    }
   }
-}
 
-@media only screen and (min-width: 993px) {
-  .hide-on-large-only {
-    display: none !important;
+  @media only screen and (min-width: 800px) and (max-width: 992px) {
+    .hide-on-med-only {
+      display: none !important;
+    }
   }
-}
 
-@media only screen and (min-width: 1201px) {
-  .hide-on-extra-large-only {
-    display: none !important;
+  @media only screen and (min-width: 993px) {
+    .hide-on-large-only {
+      display: none !important;
+    }
   }
-}
 
-@media only screen and (min-width: 1201px) {
-  .show-on-extra-large {
-    display: block !important;
+  @media only screen and (min-width: 1201px) {
+    .hide-on-extra-large-only {
+      display: none !important;
+    }
   }
-}
 
-@media only screen and (min-width: 993px) {
-  .show-on-large {
-    display: block !important;
+  @media only screen and (min-width: 1201px) {
+    .show-on-extra-large {
+      display: block !important;
+    }
   }
-}
 
-@media only screen and (min-width: 800px) and (max-width: 992px) {
-  .show-on-medium {
-    display: block !important;
+  @media only screen and (min-width: 993px) {
+    .show-on-large {
+      display: block !important;
+    }
   }
-}
 
-@media only screen and (max-width: 800px) {
-  .show-on-small {
-    display: block !important;
+  @media only screen and (min-width: 800px) and (max-width: 992px) {
+    .show-on-medium {
+      display: block !important;
+    }
   }
-}
 
-@media only screen and (min-width: 601px) {
-  .show-on-medium-and-up {
-    display: block !important;
+  @media only screen and (max-width: 800px) {
+    .show-on-small {
+      display: block !important;
+    }
   }
-}
 
-@media only screen and (max-width: 992px) {
-  .show-on-medium-and-down {
-    display: block !important;
+  @media only screen and (min-width: 601px) {
+    .show-on-medium-and-up {
+      display: block !important;
+    }
   }
-}
 
-@media only screen and (max-width: 800px) {
-  .center-on-small-only {
-    text-align: center;
+  @media only screen and (max-width: 992px) {
+    .show-on-medium-and-down {
+      display: block !important;
+    }
   }
-}
-  
+
+  @media only screen and (max-width: 800px) {
+    .center-on-small-only {
+      text-align: center;
+    }
+  }
 </style>
 <header class="page-header" id="top">
   <div class="">
@@ -92,19 +93,19 @@
               <a href="https://thefoxylabs.com">Home</a>
             </li>
             <li>
-              <a href="https://thefoxylabs.com">Our work</a>
+              <a href="https://thefoxylabs.com/our-work">Our work</a>
             </li>
             <li>
-              <a href="https://thefoxylabs.com">about us</a>
+              <a href="https://thefoxylabs.com/about-us">about us</a>
             </li>
             <li>
-              <a href="https://thefoxylabs.com">careers</a>
+              <a href="https://thefoxylabs.com/careers">careers</a>
             </li>
             <li>
               <a href="/index" class="active">blog</a>
             </li>
             <li>
-              <a href="https://thefoxylabs.com">contact us</a>
+              <a href="https://thefoxylabs.com/contact">contact us</a>
             </li>
           </ul>
         </nav>
@@ -112,13 +113,15 @@
       <div class="col s4 hide-on-small-only">
         <div class="header-row">
           <ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean m-0">
-            <li class="social-icons-instagram"><a href="http://www.instagram.com/thefoxylabs" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-            <li class="social-icons-linkedin"><a href="https://www.linkedin.com/company/foxy-labs/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="social-icons-instagram"><a href="http://www.instagram.com/thefoxylabs" target="_blank"
+                title="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li class="social-icons-linkedin"><a href="https://www.linkedin.com/company/foxy-labs/" target="_blank"
+                title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
           </ul>
         </div>
-      </div> 
+      </div>
       <div class="col s6 hide show-on-small" style="display: none; padding-top: 1.8em;">
-          <a href="https://thefoxylabs.com" class="btn btn--primary"><i class="fas fa-chevron-left"></i></a>
+        <a href="https://thefoxylabs.com" class="btn btn--primary"><i class="fas fa-chevron-left"></i></a>
       </div>
     </div>
   </div>
