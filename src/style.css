@@ -326,6 +326,9 @@ section,
   padding: 5px;
   text-decoration: none;
 }
+.btn--primary {
+  float: right;
+}
 
 .nav-img{
   width: 100vw;
