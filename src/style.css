@@ -299,6 +299,7 @@ section,
 
 .intro img{
   aspect-ratio: 2/2;
+  object-fit: cover;
 }
 
 .nav-inner{
@@ -333,7 +334,7 @@ section,
   z-index: -1;
   height: 600px;
   background-size: cover !important;
-  filter: brightness(.4);
+  filter: brightness(40%) blur(10px); 
 }
 .nav-list {
   margin: 0;
