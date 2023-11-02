@@ -334,7 +334,7 @@ section,
   z-index: -1;
   height: 600px;
   background-size: cover !important;
-  filter: brightness(40%) blur(10px); 
+  filter: brightness(40%) saturate(50%); 
 }
 .nav-list {
   margin: 0;
