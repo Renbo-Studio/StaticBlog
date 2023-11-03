@@ -279,11 +279,21 @@ section,
   .nav-con h1 {
     font-size: 24px; /* You can adjust the font size as needed */
   }
+
+  .b-con {
+    padding: 0 10%;
+    position: relative;
+  }
+  
+  .intro{
+    background: #f5f5f5;
+    padding: 10% 10% !important;
+  }
 }
 
 .intro{
   background: #f5f5f5;
-  padding: 5% 20%;
+  padding: 10% 20%;
 }
 
 .intro .l8{
