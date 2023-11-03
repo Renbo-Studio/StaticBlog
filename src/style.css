@@ -1,8 +1,8 @@
 :root {
-  --fs-300: .7rem;
-  --fs-400: .9rem;
-  --fs-500: 1.8rem;
-  --fs-600: 2rem;
+  --fs-300: .5rem;
+  --fs-400: .7rem;
+  --fs-500: 1.3rem;
+  --fs-600: 1.4rem;
   --fs-700: 2rem;
 
   --ff-body: "Poppins";
@@ -289,6 +289,11 @@ section,
     background: #f5f5f5;
     padding: 10% 5% !important;
   }
+
+  
+.articles__list {
+  padding: 2em 0!important;
+}
 }
 
 .intro{
