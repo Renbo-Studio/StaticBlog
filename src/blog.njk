@@ -3,11 +3,11 @@ title: Foxy Labs | Blog
 layout: 'base.njk'
 pagination:
   data: collections.post
-  size: 2
+  size: 3
 ---
 
-<div class="section container">
-  <h1 class="section-title">All Articles</h1>
+<div class="section container"><br><br>
+  <h1 class="section-title" style="padding: 0 .5em;">All Articles</h1><br>
 
   <ul role="list" class="articles__list flow">
     {%- for post in pagination.items -%}
@@ -15,7 +15,7 @@ pagination:
     {%- endfor -%}
   </ul>
 
-
+<div class="pagination-con">
   {% if pagination.previousPageLink %}
     <a href="{{ pagination.previousPageLink }}" class="pagination-link">Previous</a>
   {% endif %}
@@ -35,3 +35,4 @@ pagination:
   {% if not pagination.nextPageLink %}
     <a href="#" class="pagination-link disabled">Next</a>
   {% endif %}
+</div>

@@ -83,7 +83,12 @@ layout: 'base.njk'
     text-align: center;
   }
 }
-  
+  @media (max-width: 768px) {
+  .hs {
+    display: none !important;
+  }
+}
+
 </style>
 
 <section class="hero">
@@ -96,8 +101,10 @@ layout: 'base.njk'
         <a href="./blog" class="btn btn--neutral">All Articles</a>
       </div>
     </div>
-    <div class="col m6 s12">
-      <img src="//unsplash.it/510" alt="" class="hero__image">
+    <div class="col m6 s12 hs">
+      <div class="grid-center">
+        <img src="//unsplash.it/510" style="max-width: 35rem; display: block;" alt="" class="hero__image">
+      </div>
     </div>
   </div>
 </section>
@@ -109,7 +116,7 @@ layout: 'base.njk'
       about.</p>
     <ul role="list" class="articles__list flow">
       {%- for post in collections.featured -%}
-        {% include 'article-snippet.njk' %}
+        <br> {% include 'article-snippet.njk' %} <br>
       {%- endfor -%}
       <div style="width: 100%; text-align: center">
         <a href="./blog" class="btn btn-link">More Articles</a>

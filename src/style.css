@@ -326,8 +326,12 @@ section,
   padding: 5px;
   text-decoration: none;
 }
-.btn--primary {
+.col.s6.hide.show-on-small .btn--primary {
   float: right;
+}
+
+section, .section {
+  padding: min(10vh, 0em) 0 !important;
 }
 
 .nav-img{
@@ -453,13 +457,19 @@ section,
   }
 }
 
+.pagination-con{
+  width: 100%;
+  text-align: center;
+}
+
 .featured-articles {
   background-color: white;
 }
 
 .articles__list {
   --flow-spacer: 3rem;
-  margin: 6rem 0;
+  margin: 1rem 0;
+  padding: 2em;
 }
 
 /* //////////////////////
