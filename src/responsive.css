@@ -96,7 +96,7 @@
   
   .row .col.s4 {
     width: 33.3333333333%;
-    margin-left: auto;
+    margin-left: 0;
     left: auto;
     right: auto;
   }
