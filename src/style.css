@@ -269,11 +269,16 @@ section,
   position: relative;
   height: 460px;
 }
-
-.nav-con h1{
+.nav-con h1 {
   color: white;
   font-size: 40px;
   padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .nav-con h1 {
+    font-size: 24px; /* You can adjust the font size as needed */
+  }
 }
 
 .intro{
@@ -304,7 +309,7 @@ section,
 
 .nav-inner{
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 50%;
   translate: -50%;
   text-align: center;
