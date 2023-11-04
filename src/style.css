@@ -401,7 +401,15 @@ section, .section {
   border-left: 1px solid #ebeaea;
 }
 
+.grid-right{
+  display: grid;
+  place-items: center right;
+
+}
+
+
 .header-social-icons {
+  transition: all .4s ease;
   height: 100%;
   list-style: none;
   display: flex;
@@ -413,23 +421,44 @@ section, .section {
 }
 
 .header-social-icons li {
+  transition: all .4s ease;
   display: grid;
   place-items: center;
-  width: 18px !important;
   border-radius: 50%;
-  height: 18px !important;
 }
 
 .header-social-icons a {
+  transition: all .4s ease;
   color: rgb(51, 51, 51);
   text-decoration: none;
+  transition: all .4s ease;
   font-size: 10px;
 }
 
-.header-social-icons li:hover {
-  background-color: #333333;
+.social-icons-linkedin:hover {
+  background-color: lightskyblue;
+  transition: all .4s ease;
   color: white ;
 }
+
+.social-icons-instagram:hover {
+  background-color: brown;
+  transition: all .4s ease;
+  color: white ;
+}
+
+.social-icons-linkedin {
+  transition: all .4s ease;
+  height: 28px !important;
+  width: 28px !important;
+}
+
+.social-icons-instagram {
+  transition: all .4s ease;
+  height: 28px !important;
+  width: 28px !important;
+}
+
 .header-social-icons li:hover a{
   color: white;
 }
@@ -467,6 +496,7 @@ section, .section {
   grid-auto-columns: 1fr;
   align-items: center;
   gap: 3em;
+  text-align: center;
   height: calc(100vh - 20em);
 }
 
@@ -543,7 +573,7 @@ section, .section {
   background: #d3d3d3;
   padding: 3px;
   border-radius: 15px;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  filter: drop-shadow(10px 5px 2px #ebebeb);
 }
 .snippet__title {
   grid-area: title;
@@ -636,10 +666,11 @@ section, .section {
   background: #0069eb;
   color: var(--clr-neutral-100);
   font-weight: 600;
-  padding: 1em;
+  padding: 13px;
+  padding-top: 9px;
 }
 
-.btn--primary::after {
+.after.btn--primary::after {
   content: '>';
   padding: 1px;
   position: relative;
@@ -655,7 +686,7 @@ section, .section {
 }
 
 .btn--neutral {
-  padding: 1em;
+  padding: 14px;
   background-color: var(--clr-neutral-100);
   color: var(--clr-neutral-900);
   font-weight: 600;
