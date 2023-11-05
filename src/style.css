@@ -451,12 +451,14 @@ section, .section {
   transition: all .4s ease;
   height: 28px !important;
   width: 28px !important;
+  font-size: 15px !important;
 }
 
 .social-icons-instagram {
   transition: all .4s ease;
   height: 28px !important;
   width: 28px !important;
+  font-size: 15px !important;
 }
 
 .header-social-icons li:hover a{
@@ -502,6 +504,10 @@ section, .section {
 
 .hero{
   background-color: #ececec;
+}
+
+.hero p{
+  font-size: 16px !important;
 }
 
 .hero__image {
@@ -599,6 +605,7 @@ section, .section {
   color: #0069eb;
   font-weight: 600;
   font-size: 13px;
+  text-transform: uppercase;
 }
 
 .btn-link::after
